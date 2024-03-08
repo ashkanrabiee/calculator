@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val btn_7 = findViewById<Button>(R.id.btn_7) as Button
         val btn_8 = findViewById<Button>(R.id.btn_8) as Button
         val btn_9 = findViewById<Button>(R.id.btn_9) as Button
-
+        val btn_ac =findViewById<Button>(R.id.btn_ac) as Button
 
         val restxt = findViewById<TextView>(R.id.restxt) as TextView
         var n1: Int = 0
@@ -76,7 +76,10 @@ class MainActivity : AppCompatActivity() {
             temp += 9   // temp = temp + 9
             restxt.text = temp.toString()
         }
-
+        btn_ac.setOnClickListener {
+            temp = 0
+            restxt.text = ""
+        }
 
 
     }
