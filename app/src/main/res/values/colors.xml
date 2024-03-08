@@ -7,4 +7,5 @@
     <color name="orange">#FFA500</color>
     <color name="gray">#D2D2D2</color>
     <color name="light_black">#313230</color>
+    <color name="text_view_color">#113946</color>
 </resources>
