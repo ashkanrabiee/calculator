@@ -15,12 +15,13 @@
         android:orientation="vertical">
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_zero"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_rectangle"
             android:text="0"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
 
@@ -119,12 +120,13 @@
         android:orientation="vertical">
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_plus"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_rectangle"
             android:text="+"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
 
@@ -172,42 +174,46 @@
         >
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_multy"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_circle_orange"
             android:text="x"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_negetive"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_circle_orange"
             android:text="-"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_tagsim"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_circle_orange"
             android:text="/"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
 
         <Button
-            android:textColor="@color/white"
+            android:id="@+id/btn_mosavi"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_circle_orange"
             android:text="="
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:backgroundTint="@null" />
     </LinearLayout>

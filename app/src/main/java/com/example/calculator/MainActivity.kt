@@ -18,17 +18,26 @@ class MainActivity : AppCompatActivity() {
         val btn_7 = findViewById<Button>(R.id.btn_7) as Button
         val btn_8 = findViewById<Button>(R.id.btn_8) as Button
         val btn_9 = findViewById<Button>(R.id.btn_9) as Button
-        val btn_ac =findViewById<Button>(R.id.btn_ac) as Button
+        val btn_ac = findViewById<Button>(R.id.btn_ac) as Button
+        val btn_multy = findViewById<Button>(R.id.btn_multy) as Button
+        val btn_plus = findViewById<Button>(R.id.btn_plus) as Button
+        val btn_negetive = findViewById<Button>(R.id.btn_negetive) as Button
+        val btn_mosavi = findViewById<Button>(R.id.btn_mosavi) as Button
+        val btn_tagsim = findViewById<Button>(R.id.btn_tagsim) as Button
+        val btn_zero = findViewById<Button>(R.id.btn_zero) as Button
 
         val restxt = findViewById<TextView>(R.id.restxt) as TextView
         var n1: Int = 0
         var n2: Int = 0
-
+        var op = ""
         var temp: Long = 0
 
         ////////////////////////////////////////////
-
-
+        btn_zero.setOnClickListener {
+            temp *= 10 // temp = temp *10
+            temp += 0  // temp = temp + 1
+            restxt.text = temp.toString()
+        }
 
         btn_1.setOnClickListener {
             temp *= 10 // temp = temp *10
@@ -80,7 +89,50 @@ class MainActivity : AppCompatActivity() {
             temp = 0
             restxt.text = ""
         }
+        btn_plus.setOnClickListener {
+            n1 = restxt.text.toString().toInt()
+            op = "+"
+            restxt.text = ""
+            temp = 0
+
+        }
+
+        btn_negetive.setOnClickListener {
+            n1 = restxt.text.toString().toInt()
+            op = "-"
+            restxt.text = ""
+            temp = 0
+        }
+        btn_multy.setOnClickListener {
+            n1 = restxt.text.toString().toInt()
+            op = "*"
+            restxt.text = ""
+            temp = 0
+        }
+        btn_tagsim.setOnClickListener {
+            n1 = restxt.text.toString().toInt()
+            op = "/"
+            restxt.text = ""
+            temp = 0
+        }
+        btn_mosavi.setOnClickListener {
+
+            n2 = restxt.text.toString().toInt()
+            if (op == "+") {
+                restxt.text = (n1 + n2).toString()
+            }
 
 
+
+        if (op == "-") {
+            restxt.text = (n1 - n2).toString()
+        }
+        if (op == "*") {
+            restxt.text = (n1 * n2).toString()
+        }
+        if(op == "/"){
+            restxt.text =(n1/n2).toString()
+        }
+        }
     }
 }
