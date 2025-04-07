@@ -15,12 +15,18 @@ Simple UI logic (for Android)
 
 Math operations and error handling
 
-```bash
+# 👇 Clone the repository
 git clone https://github.com/your-username/kotlin-calculator.git
+
+# 📁 Move into the project folder
 cd kotlin-calculator
+
+# 🛠 Compile the Kotlin file
 kotlinc Calculator.kt -include-runtime -d Calculator.jar
+
+# 🚀 Run the app
 java -jar Calculator.jar
-```
+
 
 
 📱 Features
