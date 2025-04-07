@@ -41,3 +41,25 @@ JDK 8 or higher
 
 Kotlin 1.9 or higher
 
+🤔 Why This Project?
+Great practice for beginners learning Kotlin
+
+Reinforces core concepts: functions, input/output, conditionals
+
+Clean code structure for easy future upgrades
+
+A fun little project to put on your GitHub!
+
+🚧 Future Improvements
+Add advanced operations: power, square root, percentage
+
+Add history tracking
+
+Use ViewModel and LiveData (if Android)
+
+Dark/light mode support
+
+Build a web version using Kotlin/JS
+
+📝 License
+This project is licensed under the MIT License — feel free to use, modify, and share.
