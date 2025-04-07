@@ -15,6 +15,14 @@ Simple UI logic (for Android)
 
 Math operations and error handling
 
+```bash
+git clone https://github.com/your-username/kotlin-calculator.git
+cd kotlin-calculator
+kotlinc Calculator.kt -include-runtime -d Calculator.jar
+java -jar Calculator.jar
+```
+
+
 📱 Features
 Basic operations: Addition, Subtraction, Multiplication, Division
 
